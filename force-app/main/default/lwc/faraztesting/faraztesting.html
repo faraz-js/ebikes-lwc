@@ -1,14 +1,19 @@
 <template>
     <div class="slds-card slds-var-p-around_x-small">
-        <template lwc:if={searchBarIsVisible}>
-            <lightning-input
-                label="Search Key"
-                type="text"
-                onchange={handleSearchKeyChange}
-                class="search-bar"
-            ></lightning-input>
-        </template>
-        <template lwc:if={products.data}>
+        <h1>Ello</h1>
+        <div>
+            <lightning-input label="Search Accounts"   type="text" onchange={handleSearch}  class="search-bar" ></lightning-input>
+            <lightning-input label="Title" value={faraz} onchange={handleSearch}></lightning-input>
+            <p>Hello, {name}!</p>
+        </div>
+        <div class="content">
+            <c-product-tile
+       
+            class="slds-var-m-around_x-small"
+        >
+        </c-product-tile>
+        </div>
+        <!-- <template lwc:if={products.data}>
             <template lwc:if={products.data.records.length}>
                 <div class="content">
                     <template
@@ -42,6 +47,6 @@
         </template>
         <template lwc:if={products.error}>
             <c-error-panel errors={products.error}></c-error-panel>
-        </template>
+        </template> -->
     </div>
 </template>
