@@ -11,6 +11,6 @@ export default class Faraztesting extends LightningElement {
 
         this.searchKey = this.template.querySelector('lightning-input').value;
         this.name = event.target.value;
-        //this.template.querySelector('lightning-input').value;
+        //this.template.querySelector('lightning-input').value haaa haye;
     }
 }
